@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [HotelApp]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.web.utils.TestLinster"/>
+  </listeners>
+  <test name="HotelHomePage(failed)">
+    <classes>
+      <class name="test.apptest.hotel.SelectFavoriteCity">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="selectFavoriteCity"/>
+          <include name="afterClass"/>
+          <include name="beforeclass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- test.apptest.hotel.SelectFavoriteCity -->
+      <class name="test.apptest.hotel.FavoriteHotels">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="menuHome"/>
+          <include name="beforeClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- test.apptest.hotel.FavoriteHotels -->
+    </classes>
+  </test> <!-- HotelHomePage(failed) -->
+</suite> <!-- Failed suite [HotelApp] -->
